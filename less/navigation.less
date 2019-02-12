@@ -1,5 +1,31 @@
 /* Navigation Styling */
 
 .navigation {
-    
+    background-color: @bluegray;
+    padding: 13px 0;
+    position: absolute;
+    margin: 0 auto;
+
+    .nav-contain {
+        width: 900px;
+        margin: 0 auto;
+        .flex(space-between);
+
+        h1 {
+            font-size: 24px;
+            color: @white;
+            font-weight: 700;
+        }
+    }
+}
+
+.jumbotron {
+    margin: 0 auto;
+    position: relative;
+    background-image: url("../img/home/home-jumbotron.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    height: 598px;
+    width: 1024px;
 }

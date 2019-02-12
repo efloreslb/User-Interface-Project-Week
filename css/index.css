@@ -138,6 +138,47 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  font-family: 'Roboto', 'Arial', 'sans-serif';
+  font-size: 16px;
+  line-height: 24px;
+}
 /* Navigation Styling */
+.navigation {
+  background-color: #9aa5b0;
+  padding: 13px 0;
+  position: absolute;
+  margin: 0 auto;
+}
+.navigation .nav-contain {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation .nav-contain h1 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+}
+.jumbotron {
+  margin: 0 auto;
+  position: relative;
+  background-image: url("../img/home/home-jumbotron.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  height: 598px;
+  width: 1024px;
+}
 /* HOMEPAGE styling */
+.container {
+  margin: 0 auto;
+  width: 900px;
+}
+.container .content-container .content {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
 /* Footer Styling */
