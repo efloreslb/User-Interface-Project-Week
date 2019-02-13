@@ -8,6 +8,7 @@
 
         .content {
             .flex(space-evenly);
+            align-items: center;
             padding: 40px 0;
 
             .content-text {
@@ -36,6 +37,54 @@
 
             .content-img {
                 width: 410px;
+            }
+        }
+    }
+
+    .projects-container {
+
+        margin: 0 auto;
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+
+        .project {
+
+            margin-bottom: 50px;
+
+            .flex(flex-start);
+            flex-direction: column;
+            align-items: center;
+
+            .project-header {
+
+                .flex(flex-end);
+                flex-direction: column;
+
+
+                h4 {
+                    background-color: @lightgray;
+                    width: 330px;
+                    text-align: center;
+                    font-size: 24px;
+                    letter-spacing: 8px;
+                    padding: 35px 0;
+                    border: 1px solid @white;
+                    margin-top: -50px;
+                }
+            }
+
+            .project-text {
+                width: 43%;
+                margin: 25px 0;
+
+                p {
+                    width: 100%;
+                    margin: 25px 0;
+                }
             }
         }
     }

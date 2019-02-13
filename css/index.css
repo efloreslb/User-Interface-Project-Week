@@ -155,7 +155,6 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
 }
 .navigation .nav-contain h1 {
   font-size: 24px;
@@ -195,6 +194,7 @@ body {
 .container .content-container .content {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   padding: 40px 0;
 }
 .container .content-container .content .content-text {
@@ -219,4 +219,55 @@ body {
 .container .content-container .content .content-img {
   width: 410px;
 }
+.container .projects-container {
+  margin: 0 auto;
+}
+.container .projects-container h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.container .projects-container .project {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+.container .projects-container .project .project-header {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.container .projects-container .project .project-header h4 {
+  background-color: #d8d8d8;
+  width: 330px;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 8px;
+  padding: 35px 0;
+  border: 1px solid #fff;
+  margin-top: -50px;
+}
+.container .projects-container .project .project-text {
+  width: 43%;
+  margin: 25px 0;
+}
+.container .projects-container .project .project-text p {
+  width: 100%;
+  margin: 25px 0;
+}
 /* Footer Styling */
+footer {
+  background-color: #828282;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+footer .sitelist {
+  display: flex;
+  justify-content: flex-start;
+}
+footer .sitelist .site {
+  flex: 1;
+}
