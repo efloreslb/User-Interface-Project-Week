@@ -7,15 +7,35 @@
     .content-container { 
 
         .content {
-            .flex(center);
+            .flex(space-evenly);
             padding: 40px 0;
 
             .content-text {
+                width: 410px;
 
+                h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+
+                p {
+                    margin: 25px 0;
+                }
+
+                button {
+                    border: 1px solid @black;
+                    padding: 13px 28px;
+                    font-size: 16px;
+
+                    &:hover {
+                        background-color: @brown;
+                        color: @white;
+                    }
+                }
             }
 
             .content-img {
-
+                width: 410px;
             }
         }
     }
