@@ -2,17 +2,19 @@
 
 .container {
     margin: 0 auto;
-    width: 900px;
+    width: 860px;
 
     .content-container { 
+        padding-top: 15px;
+        //border: 1px solid green;
 
         .content {
-            .flex(space-evenly);
+            .flex(space-between);
             align-items: center;
-            padding: 40px 0;
+            padding: 40px 0 45px;
 
             .content-text {
-                width: 410px;
+                width: 415px;
 
                 h3 {
                     font-size: 24px;
@@ -25,7 +27,8 @@
 
                 button {
                     border: 1px solid @black;
-                    padding: 13px 28px;
+                    padding: 13px 0;
+                    width: 135px;
                     font-size: 16px;
 
                     &:hover {
@@ -42,13 +45,15 @@
     }
 
     .projects-container {
+        margin: 50px auto 0px auto;
 
-        margin: 0 auto;
+        
+        //border: 1px solid blue;
 
         h3 {
             font-size: 24px;
             font-weight: 700;
-            margin-bottom: 50px;
+            margin-bottom: 45px;
         }
 
         .project {
@@ -59,31 +64,39 @@
             flex-direction: column;
             align-items: center;
 
+            
+
             .project-header {
 
                 .flex(flex-end);
                 flex-direction: column;
-
+                align-items: flex-end;
+                
 
                 h4 {
                     background-color: @lightgray;
-                    width: 330px;
+                    width: 315px;
                     text-align: center;
                     font-size: 24px;
                     letter-spacing: 8px;
                     padding: 35px 0;
                     border: 1px solid @white;
-                    margin-top: -50px;
+                    margin-top: -55px;
                 }
             }
 
+            .reverse {
+                align-items: flex-start;
+            }
+
             .project-text {
-                width: 43%;
+                width: 450px;
                 margin: 25px 0;
 
                 p {
                     width: 100%;
                     margin: 25px 0;
+                    font-size: 18px;
                 }
             }
         }

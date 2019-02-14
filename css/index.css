@@ -151,7 +151,7 @@ body {
   margin: 0 auto;
 }
 .navigation .nav-contain {
-  width: 900px;
+  width: 860px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -164,7 +164,6 @@ body {
 /* Header Styling */
 .jumbotron {
   margin: 0 auto;
-  position: relative;
   background-image: url("../img/home/home-jumbotron.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -172,37 +171,41 @@ body {
   z-index: -1;
   height: 548px;
   width: 1024px;
-  padding-left: 150px;
+  display: flex;
+  justify-content: flex-end;
 }
 .jumbotron .motto {
-  width: 100%;
-  height: 90%;
+  width: 860px;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   align-content: flex-end;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
 }
 .jumbotron .motto h2 {
   font-size: 64px;
   font-weight: 700;
   color: #fff;
   width: 200px;
-  line-height: 70px;
+  line-height: 75px;
 }
 /* HOMEPAGE styling */
 .container {
   margin: 0 auto;
-  width: 900px;
+  width: 860px;
+}
+.container .content-container {
+  padding-top: 15px;
 }
 .container .content-container .content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  padding: 40px 0;
+  padding: 40px 0 45px;
 }
 .container .content-container .content .content-text {
-  width: 410px;
+  width: 415px;
 }
 .container .content-container .content .content-text h3 {
   font-size: 24px;
@@ -213,7 +216,8 @@ body {
 }
 .container .content-container .content .content-text button {
   border: 1px solid #222222;
-  padding: 13px 28px;
+  padding: 13px 0;
+  width: 135px;
   font-size: 16px;
 }
 .container .content-container .content .content-text button:hover {
@@ -224,12 +228,12 @@ body {
   width: 410px;
 }
 .container .projects-container {
-  margin: 0 auto;
+  margin: 50px auto 0px auto;
 }
 .container .projects-container h3 {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 .container .projects-container .project {
   margin-bottom: 50px;
@@ -242,24 +246,29 @@ body {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  align-items: flex-end;
 }
 .container .projects-container .project .project-header h4 {
   background-color: #d8d8d8;
-  width: 330px;
+  width: 315px;
   text-align: center;
   font-size: 24px;
   letter-spacing: 8px;
   padding: 35px 0;
   border: 1px solid #fff;
-  margin-top: -50px;
+  margin-top: -55px;
+}
+.container .projects-container .project .reverse {
+  align-items: flex-start;
 }
 .container .projects-container .project .project-text {
-  width: 43%;
+  width: 450px;
   margin: 25px 0;
 }
 .container .projects-container .project .project-text p {
   width: 100%;
   margin: 25px 0;
+  font-size: 18px;
 }
 /* Footer Styling */
 footer {
@@ -268,13 +277,13 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 60px;
 }
 footer .footer-content {
+  width: 860px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 900px;
 }
 footer .footer-content .signup {
   font-size: 20px;
@@ -298,10 +307,11 @@ footer .footer-content .signup p {
 footer .footer-content .sitelist {
   display: flex;
   justify-content: space-between;
-  width: 62%;
+  width: 60%;
+  line-height: 28px;
 }
 footer .footer-content .sitelist .site {
-  width: 150px;
+  width: 33%;
   font-size: 14px;
 }
 footer .footer-content .sitelist .site h4 {
@@ -316,5 +326,5 @@ footer .copyright {
   text-align: center;
   font-size: 12px;
   color: #d8d8d8;
-  margin: 30px 0 3px;
+  margin: 20px 0 3px;
 }
