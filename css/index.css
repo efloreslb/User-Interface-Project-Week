@@ -150,8 +150,13 @@ body {
   padding: 13px 0;
   margin: 0 auto;
 }
+@media (max-width: 320px) {
+  .navigation {
+    background-color: black;
+  }
+}
 .navigation .nav-contain {
-  width: 860px;
+  max-width: 860px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -160,6 +165,9 @@ body {
   font-size: 24px;
   color: #fff;
   font-weight: 700;
+}
+.navigation .nav-contain nav {
+  display: none;
 }
 /* Header Styling */
 .jumbotron {
@@ -170,12 +178,12 @@ body {
   background-position-y: -50px;
   z-index: -1;
   height: 548px;
-  width: 1024px;
+  max-width: 1024px;
   display: flex;
   justify-content: flex-end;
 }
 .jumbotron .motto {
-  width: 860px;
+  max-width: 860px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
@@ -187,13 +195,13 @@ body {
   font-size: 64px;
   font-weight: 700;
   color: #fff;
-  width: 200px;
+  width: 50%;
   line-height: 75px;
 }
 /* HOMEPAGE styling */
 .container {
   margin: 0 auto;
-  width: 860px;
+  max-width: 860px;
 }
 .container .content-container {
   padding-top: 15px;
@@ -203,9 +211,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 40px 0 45px;
+  width: 100%;
 }
 .container .content-container .content .content-text {
-  width: 415px;
+  width: 48%;
 }
 .container .content-container .content .content-text h3 {
   font-size: 24px;
@@ -224,8 +233,13 @@ body {
   background-color: #504545;
   color: #fff;
 }
-.container .content-container .content .content-img {
-  width: 410px;
+.container .content-container .content .content-image {
+  width: 48%;
+}
+@media (max-width: 320px) {
+  .container .content-container .content .content-image img {
+    content: url("../img/home/home-mobile-img-1.png");
+  }
 }
 .container .projects-container {
   margin: 50px auto 0px auto;

@@ -2,7 +2,7 @@
 
 .container {
     margin: 0 auto;
-    width: 860px;
+    max-width: 860px;
 
     .content-container { 
         padding-top: 15px;
@@ -12,9 +12,10 @@
             .flex(space-between);
             align-items: center;
             padding: 40px 0 45px;
+            width: 100%;
 
             .content-text {
-                width: 415px;
+                width: 48%;
 
                 h3 {
                     font-size: 24px;
@@ -38,8 +39,16 @@
                 }
             }
 
-            .content-img {
-                width: 410px;
+            .content-image {
+                width: 48%;
+
+                img {
+
+                    @media @mobile {
+                        content:url("../img/home/home-mobile-img-1.png")
+                    }
+                    
+                }
             }
         }
     }
