@@ -147,16 +147,13 @@ body {
 /* Navigation Styling */
 .navigation {
   background-color: #9aa5b0;
-  padding: 13px 0;
+  padding: 13px 15px;
   margin: 0 auto;
 }
-@media (max-width: 320px) {
-  .navigation {
-    background-color: black;
-  }
+@media (max-width: 500px) {
 }
 .navigation .nav-contain {
-  max-width: 860px;
+  max-width: 890px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -182,14 +179,20 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 500px) {
+  .jumbotron {
+    background-image: url("../img/home/home-mobile-jumbotron.png");
+    height: 210px;
+  }
+}
 .jumbotron .motto {
-  max-width: 860px;
+  max-width: 890px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   align-content: flex-end;
-  padding-bottom: 48px;
+  padding: 0 15px 48px 15px;
 }
 .jumbotron .motto h2 {
   font-size: 64px;
@@ -198,13 +201,20 @@ body {
   width: 50%;
   line-height: 75px;
 }
+@media (max-width: 500px) {
+  .jumbotron .motto h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+}
 /* HOMEPAGE styling */
 .container {
   margin: 0 auto;
-  max-width: 860px;
+  max-width: 890px;
 }
 .container .content-container {
-  padding-top: 15px;
+  padding: 15px 15px;
+  width: 90%;
 }
 .container .content-container .content {
   display: flex;
@@ -213,8 +223,20 @@ body {
   padding: 40px 0 45px;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .container .content-container .content {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+}
 .container .content-container .content .content-text {
   width: 48%;
+}
+@media (max-width: 500px) {
+  .container .content-container .content .content-text {
+    width: 100%;
+  }
 }
 .container .content-container .content .content-text h3 {
   font-size: 24px;
@@ -228,6 +250,12 @@ body {
   padding: 13px 0;
   width: 135px;
   font-size: 16px;
+  background-color: #fff;
+}
+@media (max-width: 500px) {
+  .container .content-container .content .content-text button {
+    width: 100%;
+  }
 }
 .container .content-container .content .content-text button:hover {
   background-color: #504545;
@@ -236,18 +264,35 @@ body {
 .container .content-container .content .content-image {
   width: 48%;
 }
-@media (max-width: 320px) {
-  .container .content-container .content .content-image img {
+@media (max-width: 500px) {
+  .container .content-container .content .content-image {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container .content-container .content .content-image #home01 {
     content: url("../img/home/home-mobile-img-1.png");
+  }
+}
+@media (max-width: 500px) {
+  .container .content-container .content .content-image #home02 {
+    content: url("../img/home/home-mobile-img-2.png");
+  }
+}
+@media (max-width: 500px) {
+  .container .content-container .content-reverse {
+    flex-direction: column-reverse;
   }
 }
 .container .projects-container {
   margin: 50px auto 0px auto;
+  width: 100%;
 }
 .container .projects-container h3 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 45px;
+  padding-left: 15px;
 }
 .container .projects-container .project {
   margin-bottom: 50px;
@@ -262,6 +307,12 @@ body {
   flex-direction: column;
   align-items: flex-end;
 }
+@media (max-width: 500px) {
+  .container .projects-container .project .project-header {
+    align-items: center;
+    align-content: center;
+  }
+}
 .container .projects-container .project .project-header h4 {
   background-color: #d8d8d8;
   width: 315px;
@@ -272,12 +323,44 @@ body {
   border: 1px solid #fff;
   margin-top: -55px;
 }
-.container .projects-container .project .reverse {
+@media (max-width: 500px) {
+  .container .projects-container .project .project-header h4 {
+    width: 90%;
+    margin: 0 15px;
+    margin-top: -15px;
+  }
+}
+@media (max-width: 500px) {
+  .container .projects-container .project .project-header #img-villas {
+    content: url("../img/home/home-mobile-villas-img.png");
+  }
+}
+@media (max-width: 500px) {
+  .container .projects-container .project .project-header #img-outskirts {
+    content: url("../img/home/home-mobile-outskirts-img.png");
+  }
+}
+@media (max-width: 500px) {
+  .container .projects-container .project .project-header #img-theblocks {
+    content: url("../img/home/home-mobile-the-blocks-img.png");
+  }
+}
+.container .projects-container .project .project-header-reverse {
   align-items: flex-start;
+}
+@media (max-width: 500px) {
+  .container .projects-container .project .project-header-reverse {
+    align-items: center;
+  }
 }
 .container .projects-container .project .project-text {
   width: 450px;
   margin: 25px 0;
+}
+@media (max-width: 500px) {
+  .container .projects-container .project .project-text {
+    width: 90%;
+  }
 }
 .container .projects-container .project .project-text p {
   width: 100%;
@@ -294,10 +377,16 @@ footer {
   padding-top: 60px;
 }
 footer .footer-content {
-  width: 860px;
+  max-width: 860px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  footer .footer-content {
+    width: 90%;
+    flex-direction: column;
+  }
 }
 footer .footer-content .signup {
   font-size: 20px;
@@ -324,8 +413,14 @@ footer .footer-content .sitelist {
   width: 60%;
   line-height: 28px;
 }
+@media (max-width: 500px) {
+  footer .footer-content .sitelist {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 footer .footer-content .sitelist .site {
-  width: 33%;
+  width: 100%;
   font-size: 14px;
 }
 footer .footer-content .sitelist .site h4 {
@@ -341,4 +436,11 @@ footer .copyright {
   font-size: 12px;
   color: #d8d8d8;
   margin: 20px 0 3px;
+  max-width: 860px;
+}
+@media (max-width: 500px) {
+  footer .copyright {
+    width: 90%;
+    text-align: left;
+  }
 }

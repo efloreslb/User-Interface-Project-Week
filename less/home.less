@@ -2,11 +2,13 @@
 
 .container {
     margin: 0 auto;
-    max-width: 860px;
+    max-width: 890px;
+    // padding: 0 15px;
 
     .content-container { 
-        padding-top: 15px;
+        padding: 15px 15px;
         //border: 1px solid green;
+        width: 90%;
 
         .content {
             .flex(space-between);
@@ -14,8 +16,18 @@
             padding: 40px 0 45px;
             width: 100%;
 
+            @media @mobile {
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+            }
+
             .content-text {
                 width: 48%;
+
+                @media @mobile {
+                    width: 100%;
+                }
 
                 h3 {
                     font-size: 24px;
@@ -31,6 +43,11 @@
                     padding: 13px 0;
                     width: 135px;
                     font-size: 16px;
+                    background-color: @white;
+
+                    @media @mobile {
+                        width: 100%;
+                    }
 
                     &:hover {
                         background-color: @brown;
@@ -42,19 +59,36 @@
             .content-image {
                 width: 48%;
 
-                img {
+                @media @mobile {
+                    width: 100%;
+                }
+
+                #home01 {
 
                     @media @mobile {
-                        content:url("../img/home/home-mobile-img-1.png")
+                        content:url("../img/home/home-mobile-img-1.png");
                     }
-                    
                 }
+
+                #home02 {
+                    @media @mobile {
+                        content:url("../img/home/home-mobile-img-2.png");
+                    }
+                }
+            }
+        }
+
+        .content-reverse {
+
+            @media @mobile {
+                flex-direction: column-reverse;
             }
         }
     }
 
     .projects-container {
         margin: 50px auto 0px auto;
+        width: 100%;
 
         
         //border: 1px solid blue;
@@ -63,12 +97,11 @@
             font-size: 24px;
             font-weight: 700;
             margin-bottom: 45px;
+            padding-left: 15px;
         }
 
         .project {
-
             margin-bottom: 50px;
-
             .flex(flex-start);
             flex-direction: column;
             align-items: center;
@@ -76,10 +109,18 @@
             
 
             .project-header {
-
                 .flex(flex-end);
                 flex-direction: column;
                 align-items: flex-end;
+
+                @media @mobile {
+                    align-items: center;
+                    align-content: center;
+                }
+
+                img {
+                    // margin-left: -15px;
+                }
                 
 
                 h4 {
@@ -91,16 +132,48 @@
                     padding: 35px 0;
                     border: 1px solid @white;
                     margin-top: -55px;
+
+                    @media @mobile {
+                        width: 90%;
+                        margin: 0 15px;
+                        margin-top: -15px;
+                    }
+                }
+
+                #img-villas {
+                    @media @mobile {
+                        content:url("../img/home/home-mobile-villas-img.png");
+                    }
+                }
+
+                #img-outskirts {
+                    @media @mobile {
+                        content:url("../img/home/home-mobile-outskirts-img.png");
+                    }
+                }
+
+                #img-theblocks {
+                    @media @mobile {
+                        content:url("../img/home/home-mobile-the-blocks-img.png");
+                    }
                 }
             }
 
-            .reverse {
+            .project-header-reverse {
                 align-items: flex-start;
+
+                @media @mobile {
+                    align-items: center;
+                }
             }
 
             .project-text {
                 width: 450px;
                 margin: 25px 0;
+
+                @media @mobile {
+                    width: 90%;
+                }
 
                 p {
                     width: 100%;

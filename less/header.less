@@ -11,13 +11,18 @@
     max-width: 1024px;
     .flex(flex-end);
 
+    @media @mobile {
+        background-image: url("../img/home/home-mobile-jumbotron.png");
+        height: 210px;
+    }
+
     .motto {
-        max-width: 860px;
+        max-width: 890px;
         margin: 0 auto;
         .flex(flex-end);
         flex-direction: column;
         align-content: flex-end;
-        padding-bottom: 48px;
+        padding: 0 15px 48px 15px;
         //border: 1px solid red;
 
         h2 {
@@ -27,6 +32,10 @@
             width: 50%;
             line-height: 75px;
 
+            @media @mobile {
+                font-size: 38px;
+                line-height: 40px;
+            }
         }
     }
 }
