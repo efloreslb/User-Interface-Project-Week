@@ -258,7 +258,7 @@ body {
   font-weight: 700;
 }
 .container .content-container .content .content-text p {
-  margin: 25px 0;
+  margin: 20px 0;
 }
 .container .content-container .content .content-text button {
   border: 1px solid #222222;
@@ -436,10 +436,10 @@ footer .footer-content {
   }
 }
 footer .footer-content .signup {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
   width: 290px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
 }
 footer .footer-content .signup input {
   width: 90%;
