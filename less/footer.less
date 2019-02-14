@@ -5,7 +5,13 @@ footer {
     color: @white;
     .flex(center);
     flex-direction: column;
+    align-items: center;
     padding-top: 60px;
+
+    @media @mobile {
+        margin-top: 50px;
+        padding-top: 20px;
+    }
 
 
     .footer-content {
@@ -33,11 +39,16 @@ footer {
                 color: rgb(163, 162, 162);
                 padding-left: 10px;
                 font-size: 16px;
+
+                @media @mobile {
+                    height: 45px;
+                    margin-top: 15px;
+                }
             }
 
             p {
                 font-size: 12px;
-                font-weight: 400;
+                font-weight: 100;
             }
         }
 
@@ -54,6 +65,10 @@ footer {
             .site {
                 width: 100%;
                 font-size: 14px;
+
+                @media @mobile {
+                    margin-top: 20px;
+                }
 
                 h4 {
                     font-size: 18px;
@@ -78,6 +93,7 @@ footer {
         @media @mobile {
             width: 90%;
             text-align: left;
+            margin-bottom: 25px;
         }
     }
 }

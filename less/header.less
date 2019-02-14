@@ -6,12 +6,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: -50px;
+    background-size: cover;
     z-index: -1;
     height: 548px;
     max-width: 1024px;
     .flex(flex-end);
 
     @media @mobile {
+        width: 100%;
         background-image: url("../img/home/home-mobile-jumbotron.png");
         height: 210px;
     }
@@ -22,8 +24,13 @@
         .flex(flex-end);
         flex-direction: column;
         align-content: flex-end;
-        padding: 0 15px 48px 15px;
+        padding: 0 0px 48px 0px;
         //border: 1px solid red;
+
+        @media @mobile {
+            padding-bottom: 22px;
+            width: 90%;
+        }
 
         h2 {
             font-size: 64px;
@@ -33,8 +40,9 @@
             line-height: 75px;
 
             @media @mobile {
-                font-size: 38px;
-                line-height: 40px;
+                font-size: 34px;
+                font-weight: 600;
+                line-height: 42px;
             }
         }
     }
