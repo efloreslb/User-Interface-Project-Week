@@ -1,5 +1,19 @@
 // JS goes here
 
+//Nav Component
+
+const toggleNav = () => {
+    nav.classList.toggle('nav-hidden');
+}
+
+const nav = document.querySelector('.nav-content');
+const navButton = document.querySelector('.menu-button');
+navButton.addEventListener('click', toggleNav);
+
+
+
+//Tab-Component
+
 class TabLink {
     constructor(element) {
         this.element = element;
