@@ -3,7 +3,16 @@
     padding-right: 15px;
     margin-top: 50px;
 
+    @media @mobile {
+        margin-top: 30px;
+    }
+
     .services-description {
+        width: 100%;
+
+        @media @mobile {
+            //margin-bottom: 20px;
+        }
         
     }
 
@@ -12,13 +21,25 @@
         margin-top: 50px;
         margin-bottom: 50px;
 
+        @media @mobile {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
         .tab {
-            width: 20%;
+            width: 21%;
             border: 1px solid @brown;
-            padding: 10px 0;
+            padding: 12px 0;
             text-align: center;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
+
+            @media @mobile {
+                width: 100%;
+                margin-top: 20px;
+            }
 
             &:hover {
                 background-color: @blue;
@@ -32,9 +53,19 @@
         align-items: center;
         margin-bottom: 80px;
 
+        @media @mobile {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         .tab-content-text {
 
-            width: 49%;
+            width: 50%;
+
+            @media @mobile {
+                width: 100%;
+            }
 
             h3 {
                 font-size: 24px;
@@ -44,6 +75,25 @@
             p {
                 padding-top: 15px;
                 padding-bottom: 15px;
+            }
+        }
+
+        .tab-content-img {
+            width: 50%;
+
+            @media @mobile {
+
+                width: 100%;
+            }
+
+            img {
+
+                @media @mobile {
+                    content:url("../img/services/services-tab-mobile-pre-construction-img.png");
+
+                    width: 100%;
+                }
+                
             }
         }
     }

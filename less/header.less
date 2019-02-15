@@ -9,15 +9,16 @@
     background-size: cover;
     z-index: -1;
     max-width: 1024px;
+    width: 100%;
     .flex(flex-end);
 
     //border: 1px solid orange;
 
-    @media @mobile {
-        width: 100%;
-        background-image: url("../img/home/home-mobile-jumbotron.png");
-        height: 210px;
-    }
+    // @media @mobile {
+    //     width: 100%;
+    //     background-image: url("../img/home/home-mobile-jumbotron.png");
+    //     height: 210px;
+    // }
 
     .motto {
         max-width: 890px;
@@ -49,6 +50,7 @@
                 font-size: 34px;
                 font-weight: 600;
                 line-height: 42px;
+                padding-left: 0;
             }
         }
     }
@@ -61,16 +63,18 @@
     @media @mobile {
         height: 210px;
         background-image: url("../img/home/home-mobile-jumbotron.png");
-        
     }
 }
 
 .jumbo-services {
     background-image: url("../img/services/services-jumbotron.png");
-    height: 200px;
+    height: 209px;
+
+    @media @mobile {
+        background-image: url("../img/services/services-mobile-jumbotron.png");
+    }
 
     .motto {
-
         padding-bottom: 15px;
     }
 }
