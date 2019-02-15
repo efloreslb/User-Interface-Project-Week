@@ -1,0 +1,50 @@
+.services-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+
+    .services-description {
+        
+    }
+
+    .tab-section {
+        .flex(space-between);
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        .tab {
+            width: 20%;
+            border: 1px solid @brown;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+
+            &:hover {
+                background-color: @blue;
+                color: @white;
+            }
+        }
+    }
+
+    .tab-content {
+        .flex(space-between);
+        align-items: center;
+        margin-bottom: 80px;
+
+        .tab-content-text {
+
+            width: 49%;
+
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            p {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}

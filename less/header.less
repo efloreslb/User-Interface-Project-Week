@@ -2,15 +2,16 @@
 
 .jumbotron {
     margin: 0 auto;
-    background-image: url("../img/home/home-jumbotron.png");
+   
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: -50px;
     background-size: cover;
     z-index: -1;
-    height: 548px;
     max-width: 1024px;
     .flex(flex-end);
+
+    //border: 1px solid orange;
 
     @media @mobile {
         width: 100%;
@@ -20,11 +21,13 @@
 
     .motto {
         max-width: 890px;
+        width: 100%;
         margin: 0 auto;
         .flex(flex-end);
         flex-direction: column;
         align-content: flex-end;
         padding: 0 0px 48px 0px;
+        
         //border: 1px solid red;
 
         @media @mobile {
@@ -38,6 +41,9 @@
             color: @white;
             width: 50%;
             line-height: 75px;
+            padding-left: 15px;
+            
+            //border: 1px solid purple;
 
             @media @mobile {
                 font-size: 34px;
@@ -45,5 +51,26 @@
                 line-height: 42px;
             }
         }
+    }
+}
+
+.jumbo-home {
+    background-image: url("../img/home/home-jumbotron.png");
+    height: 548px;
+
+    @media @mobile {
+        height: 210px;
+        background-image: url("../img/home/home-mobile-jumbotron.png");
+        
+    }
+}
+
+.jumbo-services {
+    background-image: url("../img/services/services-jumbotron.png");
+    height: 200px;
+
+    .motto {
+
+        padding-bottom: 15px;
     }
 }

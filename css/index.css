@@ -169,13 +169,11 @@ body {
 /* Header Styling */
 .jumbotron {
   margin: 0 auto;
-  background-image: url("../img/home/home-jumbotron.png");
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: -50px;
   background-size: cover;
   z-index: -1;
-  height: 548px;
   max-width: 1024px;
   display: flex;
   justify-content: flex-end;
@@ -189,6 +187,7 @@ body {
 }
 .jumbotron .motto {
   max-width: 890px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
@@ -208,6 +207,7 @@ body {
   color: #fff;
   width: 50%;
   line-height: 75px;
+  padding-left: 15px;
 }
 @media (max-width: 500px) {
   .jumbotron .motto h2 {
@@ -216,14 +216,39 @@ body {
     line-height: 42px;
   }
 }
+.jumbo-home {
+  background-image: url("../img/home/home-jumbotron.png");
+  height: 548px;
+}
+@media (max-width: 500px) {
+  .jumbo-home {
+    height: 210px;
+    background-image: url("../img/home/home-mobile-jumbotron.png");
+  }
+}
+.jumbo-services {
+  background-image: url("../img/services/services-jumbotron.png");
+  height: 200px;
+}
+.jumbo-services .motto {
+  padding-bottom: 15px;
+}
 /* HOMEPAGE styling */
 .container {
   margin: 0 auto;
   max-width: 890px;
+  width: 100%;
 }
 .container .content-container {
   padding: 15px 15px;
   width: 90%;
+}
+@media (max-width: 500px) {
+  .container .content-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 .container .content-container .content {
   display: flex;
@@ -244,7 +269,7 @@ body {
   }
 }
 .container .content-container .content .content-text {
-  width: 48%;
+  width: 52%;
 }
 @media (max-width: 500px) {
   .container .content-container .content .content-text {
@@ -407,6 +432,46 @@ body {
   margin: 25px 0;
   font-size: 18px;
 }
+.services-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 50px;
+}
+.services-container .tab-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.services-container .tab-section .tab {
+  width: 20%;
+  border: 1px solid #504545;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.services-container .tab-section .tab:hover {
+  background-color: #5e9fb9;
+  color: #fff;
+}
+.services-container .tab-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.services-container .tab-content .tab-content-text {
+  width: 49%;
+}
+.services-container .tab-content .tab-content-text h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.services-container .tab-content .tab-content-text p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 /* Footer Styling */
 footer {
   background-color: #828282;
@@ -428,6 +493,7 @@ footer .footer-content {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 @media (max-width: 500px) {
   footer .footer-content {

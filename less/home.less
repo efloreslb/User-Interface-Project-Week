@@ -3,12 +3,17 @@
 .container {
     margin: 0 auto;
     max-width: 890px;
-    // padding: 0 15px;
+    width: 100%;
 
     .content-container { 
         padding: 15px 15px;
         //border: 1px solid green;
         width: 90%;
+
+        @media @mobile {
+            .flex(center);
+            flex-direction: column;
+        }
 
 
         .content {
@@ -28,7 +33,7 @@
             }
 
             .content-text {
-                width: 48%;
+                width: 52%;
 
                 @media @mobile {
                     width: 100%;
