@@ -7,14 +7,89 @@
 
     @media @mobile {
         margin-top: 30px;
+        flex-direction: column;
     }
 
     h3 {
         font-size: 24px;
         font-weight: 700;
+        margin-bottom: 30px;
     }
 
     .contact-form {
+        width: 50%;
+
+        @media @mobile {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        form {
+            .flex(flex-start);
+            flex-direction: column;
+
+            #enter-email {
+                height: 30px;
+                padding-left: 10px;
+                border-radius: 5px;
+                border: 1px solid @lightgray;
+                font-size: 14px;
+
+                @media @mobile {
+                    height: 40px;
+                }
+            }
+
+            .footer-text {
+                font-size: 12px;
+                font-weight: 100;
+                margin-bottom: 30px;
+            }
+
+            select{
+                height: 30px;
+                margin-bottom: 30px;
+                border: 1px solid @lightgray;
+                font-size: 14px;
+                padding-left: 10px;
+
+                @media @mobile {
+                    height: 40px;
+                }
+            }
+
+            textarea {
+                height: 130px;
+                border: 1px solid @lightgray;
+                border-radius: 5px;
+            }
+
+            .radios {
+                margin: 22px 0;
+
+                input {
+                    margin-right: 5px;
+                }
+            }
+
+            button {
+                width: 130px;
+                padding: 12px 0;
+                background-color: @white;
+                border: 1px solid @brown;
+                font-size: 16px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: @brown;
+                    color: @white;
+                }
+
+                @media @mobile {
+                    width: 100%;
+                }
+            }
+        }
 
         
     }
@@ -22,8 +97,11 @@
     .contact-locations {
         width: 40%;
 
-        .location {
+        @media @mobile {
+            width: 100%;
+        }
 
+        .location {
             margin-top: 30px;
 
             h4 {

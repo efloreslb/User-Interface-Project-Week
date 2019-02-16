@@ -38,20 +38,29 @@
 <div class="container">
 	<div class="contact-container">
 		<div class="contact-form">
-			<h3>Get In Touch</h3>
-			<p>Email Address</p>
-			<input placeholder="Enter Email"></input>
-			<p>We'll never share your email with anyone else.</p>
-			<p>How many buildings do you need planned?</p>
-			<input>1-5</input>
-			<p>Provide a brief overview of your project needs:</p>
-			<input type="text"></input>
-			<input type="radio">
-				I am a small business
-				I am a residential owner
-				I am a corporation
-			</input>
-			<button>Submit</button>
+			<form action="">
+				<h3>Get In Touch</h3>
+				<p>Email Address</p>
+				<input type="text" id="enter-email" placeholder="Enter Email">
+				<p class="footer-text">We'll never share your email with anyone else.</p>
+				<p>How many buildings do you need planned?</p>
+				<select name="buildings">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<p>Provide a brief overview of your project needs:</p>
+				<textarea name="overview"></textarea>
+				
+				<div class="radios">
+					<input type="radio" name="business">I am a small business<br>
+					<input type="radio" name="business">I am a residential owner<br>
+					<input type="radio" name="business">I am a corporation
+				</div>
+				<button>Submit</button>
+			</form>
 		</div>
 		<div class="contact-locations">
 			<h3>Where We Work</h3>

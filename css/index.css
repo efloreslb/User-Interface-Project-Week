@@ -240,7 +240,7 @@ body {
   font-size: 64px;
   font-weight: 700;
   color: #fff;
-  width: 50%;
+  width: 60%;
   line-height: 75px;
   padding-left: 15px;
 }
@@ -596,14 +596,92 @@ body {
 @media (max-width: 500px) {
   .contact-container {
     margin-top: 30px;
+    flex-direction: column;
   }
 }
 .contact-container h3 {
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 30px;
+}
+.contact-container .contact-form {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .contact-container .contact-form {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+.contact-container .contact-form form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.contact-container .contact-form form #enter-email {
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #d8d8d8;
+  font-size: 14px;
+}
+@media (max-width: 500px) {
+  .contact-container .contact-form form #enter-email {
+    height: 40px;
+  }
+}
+.contact-container .contact-form form .footer-text {
+  font-size: 12px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.contact-container .contact-form form select {
+  height: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #d8d8d8;
+  font-size: 14px;
+  padding-left: 10px;
+}
+@media (max-width: 500px) {
+  .contact-container .contact-form form select {
+    height: 40px;
+  }
+}
+.contact-container .contact-form form textarea {
+  height: 130px;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+}
+.contact-container .contact-form form .radios {
+  margin: 22px 0;
+}
+.contact-container .contact-form form .radios input {
+  margin-right: 5px;
+}
+.contact-container .contact-form form button {
+  width: 130px;
+  padding: 12px 0;
+  background-color: #fff;
+  border: 1px solid #504545;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contact-container .contact-form form button:hover {
+  background-color: #504545;
+  color: #fff;
+}
+@media (max-width: 500px) {
+  .contact-container .contact-form form button {
+    width: 100%;
+  }
 }
 .contact-container .contact-locations {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .contact-container .contact-locations {
+    width: 100%;
+  }
 }
 .contact-container .contact-locations .location {
   margin-top: 30px;
