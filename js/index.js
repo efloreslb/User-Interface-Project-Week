@@ -7,7 +7,7 @@ const toggleNav = () => {
 }
 
 const nav = document.querySelector('.nav-content');
-const navButton = document.querySelector('.menu-button');
+const navButton = document.querySelector('.nav-button');
 navButton.addEventListener('click', toggleNav);
 
 

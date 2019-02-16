@@ -200,16 +200,12 @@ body {
 .navigation .nav-contain .nav-hidden {
   display: none;
 }
+.navigation .nav-contain .nav-button-hidden {
+  display: none;
+}
 .navigation .nav-contain img {
   cursor: pointer;
   z-index: 3;
-}
-.navigation .nav-contain #expanded {
-  display: none;
-}
-.navigation .expanded-nav {
-  max-width: 1024px;
-  height: cover;
 }
 /* Header Styling */
 .jumbotron {
