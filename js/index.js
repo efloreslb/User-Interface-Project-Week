@@ -4,13 +4,21 @@
 
 const toggleNav = () => {
     nav.classList.toggle('nav-hidden');
+
+    navButton.forEach(button => {
+        button.classList.toggle('nav-button-hidden');
+    })
+}
+
+const toggleButton = () => {
+    button.classList.toggle('nav-button-hidden')
 }
 
 const nav = document.querySelector('.nav-content');
-const navButton = document.querySelector('.nav-button');
-navButton.addEventListener('click', toggleNav);
-
-
+const navButton = document.querySelectorAll('.nav-button');
+navButton.forEach(button => { 
+    button.addEventListener('click', toggleNav)
+})
 
 //Tab-Component
 
