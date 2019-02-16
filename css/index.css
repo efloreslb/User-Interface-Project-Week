@@ -274,6 +274,18 @@ body {
 .jumbo-services .motto {
   padding-bottom: 25px;
 }
+.jumbo-contact {
+  background-image: url("../img/contact/contact-jumbotron.png");
+  height: 209px;
+}
+@media (max-width: 500px) {
+  .jumbo-contact {
+    background-image: url("../img/contact/contact-mobile-jumbotron.png");
+  }
+}
+.jumbo-contact .motto {
+  padding-bottom: 25px;
+}
 /* HOMEPAGE styling */
 .container {
   margin: 0 auto;
@@ -533,7 +545,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
   display: none;
 }
 @media (max-width: 500px) {
@@ -575,6 +586,32 @@ body {
 .services-container .tab-content-selected {
   display: flex;
 }
+.contact-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .contact-container {
+    margin-top: 30px;
+  }
+}
+.contact-container h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.contact-container .contact-locations {
+  width: 40%;
+}
+.contact-container .contact-locations .location {
+  margin-top: 30px;
+}
+.contact-container .contact-locations .location h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
 /* Footer Styling */
 footer {
   background-color: #828282;
@@ -584,6 +621,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
+  margin-top: 80px;
 }
 @media (max-width: 500px) {
   footer {
