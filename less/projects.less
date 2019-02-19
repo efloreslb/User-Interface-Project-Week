@@ -1,4 +1,4 @@
-.projects-container {
+.projectspage-container {
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 50px;
@@ -7,4 +7,119 @@
         margin-top: 30px;
     }
 
+    .right-button {
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        border: 3px solid @blue;
+        text-align: center;
+        font-weight: 700;
+        cursor: pointer;
+        float: right;
+        z-index: .5;
+        margin-top: 50px;
+    }
+
+    // h3 {
+    //     font-size: 24px;
+    //     font-weight: 700;
+    //     margin-bottom: 45px;
+    //     padding-left: 15px;
+
+    //     @media @mobile {
+    //         margin-bottom: 20px;
+    //     }
+    // }
+
+    .project {
+        margin-bottom: 50px;
+        .flex(flex-start);
+        flex-direction: column;
+        align-items: center;
+        display: none;
+
+        @media @mobile {
+            margin-bottom: 20px;
+        }
+
+        .project-header {
+            .flex(flex-end);
+            flex-direction: column;
+            align-items: flex-end;
+
+            @media @mobile {
+                align-items: center;
+                align-content: center;
+            }
+
+            img {
+                width: 100%;
+            }
+            
+
+            h4 {
+                background-color: @lightgray;
+                width: 315px;
+                text-align: center;
+                font-size: 24px;
+                letter-spacing: 8px;
+                padding: 35px 0;
+                border: 1px solid @white;
+                margin-top: -55px;
+
+                @media @mobile {
+                    width: 90%;
+                    margin: 0 15px;
+                    margin-top: -15px;
+                    margin-bottom: -25px;
+                }
+            }
+
+            #img-villas {
+                @media @mobile {
+                    content:url("../img/home/home-mobile-villas-img.png");
+                }
+            }
+
+            #img-outskirts {
+                @media @mobile {
+                    content:url("../img/home/home-mobile-outskirts-img.png");
+                }
+            }
+
+            #img-theblocks {
+                @media @mobile {
+                    content:url("../img/home/home-mobile-the-blocks-img.png");
+                }
+            }
+        }
+
+        .project-header-reverse {
+            align-items: flex-start;
+
+            @media @mobile {
+                align-items: center;
+            }
+        }
+
+        .project-text {
+            width: 450px;
+            margin: 25px 0;
+
+            @media @mobile {
+                width: 90%;
+                margin-bottom: 0px;
+            }
+
+            p {
+                width: 100%;
+                margin: 25px 0;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .project-selected {
+        display: flex;
+    }
 }
