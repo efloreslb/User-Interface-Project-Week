@@ -286,6 +286,30 @@ body {
 .jumbo-contact .motto {
   padding-bottom: 25px;
 }
+.jumbo-about {
+  background-image: url("../img/about/about-jumbotron.png");
+  height: 209px;
+}
+@media (max-width: 500px) {
+  .jumbo-about {
+    background-image: url("../img/about/about-mobile-jumbotron.png ");
+  }
+}
+.jumbo-about .motto {
+  padding-bottom: 25px;
+}
+.jumbo-projects {
+  background-image: url("../img/projects/projects-jumbotron.png");
+  height: 209px;
+}
+@media (max-width: 500px) {
+  .jumbo-projects {
+    background-image: url("../img/projects/projects-mobile-jumbotron.png");
+  }
+}
+.jumbo-projects .motto {
+  padding-bottom: 25px;
+}
 /* HOMEPAGE styling */
 .container {
   margin: 0 auto;
@@ -639,6 +663,7 @@ body {
   height: 30px;
   margin-bottom: 30px;
   border: 1px solid #d8d8d8;
+  background-color: #fff;
   font-size: 14px;
   padding-left: 10px;
 }
@@ -651,6 +676,7 @@ body {
   height: 130px;
   border: 1px solid #d8d8d8;
   border-radius: 5px;
+  font-size: 14px;
 }
 .contact-container .contact-form form .radios {
   margin: 22px 0;
@@ -689,6 +715,58 @@ body {
 .contact-container .contact-locations .location h4 {
   font-size: 18px;
   font-weight: 700;
+}
+.about-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 50px;
+}
+@media (max-width: 500px) {
+  .about-container {
+    margin-top: 30px;
+  }
+}
+.about-container .about-team {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.about-container .about-team .about-team-member {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+@media (max-width: 500px) {
+  .about-container .about-team .about-team-member {
+    width: 50%;
+  }
+}
+.about-container .about-team .about-team-member img {
+  width: 95%;
+}
+.about-container .about-team .about-team-member h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.about-container .about-team .about-team-member h6 {
+  font-size: 12px;
+}
+.about-container .about-team .about-team-member p {
+  font-size: 14px;
+}
+.projects-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 50px;
+}
+@media (max-width: 500px) {
+  .projects-container {
+    margin-top: 30px;
+  }
 }
 /* Footer Styling */
 footer {

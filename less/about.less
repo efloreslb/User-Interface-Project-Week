@@ -1,0 +1,53 @@
+.about-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+
+    //border: 1px solid olive;
+
+    @media @mobile {
+        margin-top: 30px;
+    }
+
+    .about-description {
+
+    }
+
+    .about-team {
+        .flex(space-around);
+        flex-wrap: wrap;
+
+        .about-team-member {
+            width: 200px;
+            .flex(center);
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+
+            @media @mobile {
+                width: 50%;
+            }
+
+            //border: 1px solid orangered;
+
+            img {
+                width: 95%;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+                margin-top: 15px;
+            }
+
+            h6 {
+                font-size: 12px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+}
