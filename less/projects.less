@@ -7,17 +7,17 @@
         margin-top: 30px;
     }
 
-    .carousel-button {
-        border-radius: 50px;
-        width: 30px;
-        height: 30px;
-        border: 3px solid @blue;
-        text-align: center;
-        font-weight: 700;
-        cursor: pointer;
-        z-index: .5;
-        margin-top: 50px;
-    }
+    // .carousel-button {
+    //     border-radius: 50px;
+    //     width: 30px;
+    //     height: 30px;
+    //     border: 3px solid @blue;
+    //     text-align: center;
+    //     font-weight: 700;
+    //     cursor: pointer;
+    //     z-index: .5;
+    //     margin-top: 50px;
+    // }
 
     .left-button {
         float: left;
@@ -131,15 +131,69 @@
     }
 }
 
-.projects-carousel {
+.carousel-container {
     margin: 0 auto;
     width: 800px;
     height: 250px;
     background-color: @lightgray;
     overflow: hidden;
     position: relative;
+}
 
-    #carousel-item {
+.carousel-container .carousel-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    transition: all ease-in-out 500ms;
+}
 
+.carousel-container #carousel-item03 {
+    background-image: url("../img/projects/projects03.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-container #carousel-item02 {
+    background-image: url("../img/projects/projects02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-container #carousel-item01 {
+    background-image: url("../img/projects/projects01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-button {
+    width: 25px;
+    height: 25px;
+    background-color: @black;
+    border-radius: 5px;
+    position: absolute;
+    top: 110px;
+    z-index: 2000;
+    opacity: .8;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .9;
     }
+}
+
+.carousel-button-previous {
+    left: 5px;
+    background-image: url("../img/projects/button-left.png");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-button-next {
+    right: 5px;
+    background-image: url("../img/projects/button-right.png");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
