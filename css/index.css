@@ -152,6 +152,8 @@ body {
   background-color: #9aa5b0;
   padding: 13px 15px;
   margin: 0 auto;
+  position: fixed;
+  width: 100%;
 }
 @media (max-width: 500px) {
 }
@@ -166,6 +168,7 @@ body {
   color: #fff;
   font-weight: 700;
   z-index: 3;
+  cursor: pointer;
 }
 .navigation .nav-contain .nav-content {
   width: 100vw;
@@ -212,13 +215,19 @@ body {
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-position-y: -50px;
+  background-position-y: 0px;
   background-size: cover;
   z-index: -1;
   max-width: 1024px;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex- end;
+  padding-bottom: 25px;
+}
+@media (max-width: 500px) {
+  .jumbotron {
+    padding-bottom: 22px;
+  }
 }
 .jumbotron .motto {
   max-width: 890px;
@@ -228,11 +237,9 @@ body {
   justify-content: flex-end;
   flex-direction: column;
   align-content: flex-end;
-  padding: 0 0px 48px 0px;
 }
 @media (max-width: 500px) {
   .jumbotron .motto {
-    padding-bottom: 22px;
     width: 90%;
   }
 }
@@ -254,61 +261,49 @@ body {
 }
 .jumbo-home {
   background-image: url("../img/home/home-jumbotron.png");
-  height: 548px;
+  height: 598px;
 }
 @media (max-width: 500px) {
   .jumbo-home {
-    height: 210px;
+    height: 260px;
     background-image: url("../img/home/home-mobile-jumbotron.png");
   }
 }
 .jumbo-services {
   background-image: url("../img/services/services-jumbotron.png");
-  height: 209px;
+  height: 259px;
 }
 @media (max-width: 500px) {
   .jumbo-services {
     background-image: url("../img/services/services-mobile-jumbotron.png");
   }
 }
-.jumbo-services .motto {
-  padding-bottom: 25px;
-}
 .jumbo-contact {
   background-image: url("../img/contact/contact-jumbotron.png");
-  height: 209px;
+  height: 259px;
 }
 @media (max-width: 500px) {
   .jumbo-contact {
     background-image: url("../img/contact/contact-mobile-jumbotron.png");
   }
 }
-.jumbo-contact .motto {
-  padding-bottom: 25px;
-}
 .jumbo-about {
   background-image: url("../img/about/about-jumbotron.png");
-  height: 209px;
+  height: 259px;
 }
 @media (max-width: 500px) {
   .jumbo-about {
     background-image: url("../img/about/about-mobile-jumbotron.png ");
   }
 }
-.jumbo-about .motto {
-  padding-bottom: 25px;
-}
 .jumbo-projects {
   background-image: url("../img/projects/projects-jumbotron.png");
-  height: 209px;
+  height: 259px;
 }
 @media (max-width: 500px) {
   .jumbo-projects {
     background-image: url("../img/projects/projects-mobile-jumbotron.png");
   }
-}
-.jumbo-projects .motto {
-  padding-bottom: 25px;
 }
 /* HOMEPAGE styling */
 .container {
@@ -768,7 +763,7 @@ body {
     margin-top: 30px;
   }
 }
-.projectspage-container .right-button {
+.projectspage-container .carousel-button {
   border-radius: 50px;
   width: 30px;
   height: 30px;
@@ -776,9 +771,14 @@ body {
   text-align: center;
   font-weight: 700;
   cursor: pointer;
-  float: right;
   z-index: 0.5;
   margin-top: 50px;
+}
+.projectspage-container .left-button {
+  float: left;
+}
+.projectspage-container .right-button {
+  float: right;
 }
 .projectspage-container .project {
   margin-bottom: 50px;
@@ -866,6 +866,14 @@ body {
 }
 .projectspage-container .project-selected {
   display: flex;
+}
+.projects-carousel {
+  margin: 0 auto;
+  width: 800px;
+  height: 250px;
+  background-color: #d8d8d8;
+  overflow: hidden;
+  position: relative;
 }
 /* Footer Styling */
 footer {

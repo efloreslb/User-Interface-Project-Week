@@ -2,10 +2,12 @@
 
 .navigation {
     background-color: @bluegray;
-    //opacity: .5;
+    //opacity: .8;
     padding: 13px 15px;
     margin: 0 auto;
     //z-index: 1.5;
+    position: fixed;
+    width: 100%;
 
     @media @mobile {
         //background-color: black;
@@ -22,6 +24,7 @@
             color: @white;
             font-weight: 700;
             z-index: 3;
+            cursor: pointer;
         }
 
         .nav-content {
