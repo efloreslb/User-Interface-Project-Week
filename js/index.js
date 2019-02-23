@@ -8,10 +8,13 @@ const toggleNav = () => {
     navButton.forEach(button => {
         button.classList.toggle('nav-button-hidden');
     })
+
+    TweenMax.from(".nav-content", .5, {delay:0.1, y:-450, x:450, scale:0});
 }
 
 const toggleButton = () => {
-    button.classList.toggle('nav-button-hidden')
+    button.classList.toggle('nav-button-hidden');
+    TweenMax.from(".nav-button", 1, {delay:0.1, scale:0})
 }
 
 const nav = document.querySelector('.nav-content');
@@ -19,6 +22,13 @@ const navButton = document.querySelectorAll('.nav-button');
 navButton.forEach(button => { 
     button.addEventListener('click', toggleNav)
 })
+
+// const closeNavButton = document.querySelector('.nav-button-close');
+// closeNavButton.addEventListener('click', () => {
+//     TweenMax.to(".nav-content", .5, {delay:0.1, y:-450, x:450, scale:0});
+//     toggleNav;
+// })
+
 
 //Tab Component
 
