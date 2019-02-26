@@ -1,0 +1,111 @@
+.services-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+
+    @media @mobile {
+        margin-top: 30px;
+    }
+
+    .services-description {
+        width: 100%;
+
+        @media @mobile {
+            //margin-bottom: 20px;
+        }
+        
+    }
+
+    .tab-section {
+        .flex(space-between);
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        @media @mobile {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .tab {
+            width: 21%;
+            border: 1px solid @brown;
+            padding: 12px 0;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+
+            @media @mobile {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            &:hover {
+                background-color: @blue;
+                color: @white;
+                opacity: .75;
+            }
+        }
+
+        .tab-selected {
+            background-color: @blue;
+            color: @white;
+        }
+    }
+
+    .tab-content {
+        .flex(space-between);
+        align-items: center;
+        display: none;
+        
+
+        @media @mobile {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tab-content-text {
+
+            width: 50%;
+
+            @media @mobile {
+                width: 100%;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            p {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
+
+        .tab-content-img {
+
+            @media @mobile {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                
+            }
+        }
+
+    }
+
+    .tab-content-selected {
+        display: flex;
+
+
+        // .tab-content-text {
+        //     border: 1px solid red;
+        // }
+    }
+}

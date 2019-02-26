@@ -1,0 +1,107 @@
+/* Header Styling */
+
+.jumbotron {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0px;
+    background-size: cover;
+    z-index: -1;
+    max-width: 1024px;
+    width: 100%;
+    .flex(flex-      end);
+    padding-bottom: 25px;
+
+    //border: 1px solid orange;
+
+    // @media @mobile {
+    //     width: 100%;
+    //     background-image: url("../img/home/home-mobile-jumbotron.png");
+    //     height: 210px;
+    // }
+
+    @media @mobile {
+        padding-bottom: 22px;
+    }
+
+    .motto {
+        max-width: 890px;
+        width: 100%;
+        margin: 0 auto;
+        .flex(flex-end);
+        flex-direction: column;
+        align-content: flex-end;
+        //padding: 0 0px 48px 0px;
+        
+        //border: 1px solid red;
+
+        @media @mobile {
+            //padding-bottom: 22px;
+            width: 90%;
+        }
+
+        h2 {
+            font-size: 64px;
+            font-weight: 700;
+            color: @white;
+            width: 60%;
+            line-height: 75px;
+            padding-left: 15px;
+            
+            //border: 1px solid purple;
+
+            @media @mobile {
+                font-size: 34px;
+                font-weight: 600;
+                line-height: 42px;
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.jumbo-home {
+    background-image: url("../img/home/home-jumbotron.png");
+    height: 598px;
+
+    @media @mobile {
+        height: 260px;
+        background-image: url("../img/home/home-mobile-jumbotron.png");
+    }
+}
+
+.jumbo-services {
+    background-image: url("../img/services/services-jumbotron.png");
+    height: 259px;
+
+    @media @mobile {
+        background-image: url("../img/services/services-mobile-jumbotron.png");
+    }
+}
+
+.jumbo-contact {
+    background-image: url("../img/contact/contact-jumbotron.png");
+    height: 259px;
+
+    @media @mobile {
+        background-image: url("../img/contact/contact-mobile-jumbotron.png");
+    }
+}
+
+.jumbo-about {
+    background-image: url("../img/about/about-jumbotron.png");
+    height: 259px;
+
+    @media @mobile {
+        background-image: url("../img/about/about-mobile-jumbotron.png ");
+    }
+}
+
+.jumbo-projects {
+    background-image: url("../img/projects/projects-jumbotron.png");
+    height: 259px;
+
+    @media @mobile {
+        background-image: url("../img/projects/projects-mobile-jumbotron.png");
+    }
+}

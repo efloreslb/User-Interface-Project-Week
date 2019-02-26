@@ -1,38 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Services</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/index.css">
-	<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Services</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/index.css">
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 </head>
 
 <body>
+		<header class="navigation">
+				<div class="nav-contain">
+					<h1 onclick="location.href='index.html'">S&J</h1>
+					<div class="nav-content nav-hidden">
+						<nav>
+							<a href="index.html">Home</a>
+							<a href="services.html" class="nav-item-selected">Services</a>
+							<a href="contact.html">Contact</a>
+							<a href="about.html">About Us</a>
+							<a href="projects.html">Projects</a>
+						</nav>
+					</div>
+					<img src="img/nav-hamburger.png" class="nav-button">
+					<img src="img/nav-hamburger-close.png" class="nav-button nav-button-hidden">
+				</div>
+		</header>
 
-	<h1>Services</h1>
+		<div class="jumbotron jumbo-services">
+				<div class="motto">
+					<h2>Services</h2>
+				</div>
+		</div>
 
-<!-- Services Content 
-  Services
+		<div class="container">
   
-  Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
--->
+  		<div class="services-container">
+  			<div class="services-description">	
+					<p>
+						Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+					</p>
+				</div>
+	
+				<!-- *** NOTE *** Tab Navigator Content: I used the same text for each tab to make it easy, Note that the images and text do change on click but you can just use the same text for each tab element.  All the images should be in the img folder.-->
+	
+				<div class="tab-section">
+						<div class="tab tab-selected" data-tab="1">Pre-Construction</div>
+						<div class="tab" data-tab="2">Construction</div>
+						<div class="tab" data-tab="3">Design Build</div>
+						<div class="tab" data-tab="4">Sustainability</div>
+				</div>
+	
+				<div class="tab-content tab-content-selected" data-tab="1">
+					<div class="tab-content-text">
+						<h3>Pre-Construction</h3>
+						<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+						<p>Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+					</div>
+					<div class="tab-content-img pre-construction-img">
+						<img src="img/services/services-tab-pre-construction-img.png">
+					</div>
+				</div>
 
-<!-- *** NOTE *** Tab Navigator Content: I used the same text for each tab to make it easy, Note that the images and text do change on click but you can just use the same text for each tab element.  All the images should be in the img folder.
+				<div class="tab-content" data-tab="2">
+						<div class="tab-content-text">
+							<h3>Construction</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna molestie at elementum eu facilisis. Porttitor eget dolor morbi non arcu risus quis varius quam. Lorem ipsum color sit amet.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna molestie at elementum eu facilisis. Porttitor eget dolor morbi non arcu risus quis varius quam. Lorem ipsum color sit amet.</p>
+						</div>
+						<div class="tab-content-img construction-img">
+							<img src="img/services/services-tab-construction-img.png">
+						</div>
+					</div>
 
-  Pre-Construction
-  Construction
-  Design Build
-  Sustainability
+					<div class="tab-content" data-tab="3">
+							<div class="tab-content-text">
+								<h3>Design Build</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus. Et malesuada fames ac turpis egestas integer. Lorem ipsum color sit amet.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus. Et malesuada fames ac turpis egestas integer. Lorem ipsum color sit amet.</p>
+							</div>
+							<div class="tab-content-img">
+								<img src="img/services/services-tab-design-build-img.png">
+							</div>
+						</div>
 
-  Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.  Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
+						<div class="tab-content" data-tab="4">
+								<div class="tab-content-text">
+									<h3>Sustainability</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum posuere lorem ipsum dolor sit amet. Accumsan sit amet nulla facilisi morbi. Lorem ipsum color sit amet.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum posuere lorem ipsum dolor sit amet. Accumsan sit amet nulla facilisi morbi. Lorem ipsum color sit amet.</p>
+								</div>
+								<div class="tab-content-img">
+									<img src="img/services/services-tab-sustainability-img.png">
+								</div>
+							</div>
+  		</div>
+		</div>
 
+		<footer>
+				<div class="footer-content">
+					<div class="signup">
+						<h3>Interested in starting a project?  
+						Let’s talk:</h3>
+						
+						<input type="text" placeholder="Enter email"></input>
+						
+						<p>We'll never share your email with anyone else.</p>
+					</div>
+					
+					<div class="sitelist">
+						<address class="site">
+							<h4>New York</h4>
+							123 Lane<br>
+							Suite 100<br>
+							Albany, NY 12345<br>
+							<a href="tel:1-202-555-0144">202 555 0144</a>
+						</address>
+						
+						<address class="site">
+							<h4>Florida</h4>
+							Ocean Drive<br>
+							Suite 201<br>
+							Orlando, FL 22345<br>
+							<a href="tel:1-502-555-0144">502 555 0144</a>
+						</address>
+						
+						<address class="site">
+							<h4>California</h4>
+							Mountain Street<br>
+							Suite 105<br>
+							San Diego, CA 22345<br>
+							<a href="tel:1-702-555-0144">702 555 0144</a>
+						</address>
+					</div>
+				</div>
+				
+				<div class="copyright">Copyright © 2018 Smith and Jones</div>
+			</footer>
 
-
--->
-
-	<script src="js/index.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
+			<script src="js/index.js"></script>
 </body>
 </html>

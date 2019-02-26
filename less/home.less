@@ -1,0 +1,237 @@
+/* HOMEPAGE styling */
+
+.container {
+    margin: 0 auto;
+    max-width: 890px;
+    width: 100%;
+
+    //border: .5px solid orange;
+
+    .content-container { 
+        padding-top: 15px;
+        //border: 1px solid green;
+        //max-width: 860px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        margin: 0 auto;
+
+        //border: 1px solid blue;
+        
+
+        @media @mobile {
+            width: 90%;
+            .flex(center);
+            flex-direction: column;
+        }
+
+
+        .content {
+            .flex(space-between);
+            align-items: center;
+            align-content: center;
+            padding: 40px 0 45px 0;
+            width: 100%;
+            margin: 0 auto;
+
+           // border: 1px solid greenyellow;
+
+            @media @mobile {
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .content-text {
+                width: 48%;
+
+                //border: 1px solid orangered;
+
+                @media @mobile {
+                    width: 100%;
+                    padding-top: 30px;
+                    justify-content: center;
+                }
+
+                h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+
+                p {
+                    margin: 20px 0;
+                }
+
+                button {
+                    border: 1px solid @black;
+                    padding: 13px 0;
+                    width: 135px;
+                    font-size: 16px;
+                    background-color: @white;
+                    cursor: pointer;
+
+                    @media @mobile {
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        background-color: @brown;
+                        color: @white;
+                    }
+                }
+            }
+
+            .content-image {
+                //width: 48%;
+
+                //border: 1px solid orchid;
+
+                @media @mobile {
+                    width: 100%;
+                    .flex(center);
+                }
+
+                img {
+                    width: 100%;
+
+                    //border: 1px solid yellow;
+                }
+
+                #home01 {
+
+                    @media @mobile {
+                        content:url("../img/home/home-mobile-img-1.png");
+                    }
+                }
+
+                #home02 {
+                    @media @mobile {
+                        content:url("../img/home/home-mobile-img-2.png");
+                    }
+                }
+            }
+        }
+
+        .content-reverse {
+
+            @media @mobile {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
+    .projects-container {
+        margin: 50px auto 0px auto;
+        width: 100%;
+
+        //border: 1px solid blue;
+
+        @media @mobile {
+            margin-top: 20px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 45px;
+            padding-left: 15px;
+
+            @media @mobile {
+                margin-bottom: 20px;
+            }
+        }
+
+        .project {
+            margin-bottom: 50px;
+            .flex(flex-start);
+            flex-direction: column;
+            align-items: center;
+
+            @media @mobile {
+                margin-bottom: 20px;
+            }
+
+            .project-header {
+                .flex(flex-end);
+                flex-direction: column;
+                align-items: flex-end;
+
+                @media @mobile {
+                    align-items: center;
+                    align-content: center;
+                }
+
+                img {
+                    width: 100%;
+                }
+                
+
+                h4 {
+                    background-color: @lightgray;
+                    width: 315px;
+                    text-align: center;
+                    font-size: 24px;
+                    letter-spacing: 8px;
+                    padding: 35px 0;
+                    border: 1px solid @white;
+                    margin-top: -55px;
+
+                    @media @mobile {
+                        width: 90%;
+                        margin: 0 15px;
+                        margin-top: -15px;
+                        margin-bottom: -25px;
+                    }
+                }
+
+                #img-villas {
+                    @media @mobile {
+                        content:url("../img/home/home-mobile-villas-img.png");
+                        width: 100vw;
+                    }
+                }
+
+                #img-outskirts {
+                    @media @mobile {
+                        content:url("../img/home/home-mobile-outskirts-img.png");
+                        width: 100vw;
+                    }
+                }
+
+                #img-theblocks {
+                    @media @mobile {
+                        content:url("../img/home/home-mobile-the-blocks-img.png");
+                        width: 100vw;
+                    }
+                }
+            }
+
+            .project-header-reverse {
+                align-items: flex-start;
+
+                @media @mobile {
+                    align-items: center;
+                }
+            }
+
+            .project-text {
+                width: 450px;
+                margin: 25px 0;
+
+                @media @mobile {
+                    width: 90%;
+                    margin-bottom: 0px;
+                }
+
+                p {
+                    width: 100%;
+                    margin: 25px 0;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

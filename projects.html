@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
+	<title>Projects</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
 	<!--[if IE]>
@@ -17,56 +17,80 @@
 			<h1 onclick="location.href='index.html'">S&J</h1>
 			<div class="nav-content nav-hidden">
 				<nav>
-					<a href="index.html" class="nav-item-selected">Home</a>
+					<a href="index.html">Home</a>
 					<a href="services.html">Services</a>
 					<a href="contact.html">Contact</a>
 					<a href="about.html">About Us</a>
-					<a href="projects.html">Projects</a>
+					<a href="projects.html" class="nav-item-selected">Projects</a>
 				</nav>
 			</div>
 			<img src="img/nav-hamburger.png" class="nav-button">
-			<img src="img/nav-hamburger-close.png" class="nav-button nav-button-hidden nav-button-close">
+			<img src="img/nav-hamburger-close.png" class="nav-button nav-button-hidden">
 		</div>
 	</header>
 
-	<div class="jumbotron jumbo-home">
+	<div class="jumbotron jumbo-projects">
 		<div class="motto">
-			<h2>Integrity,
-			Excellence,
-			Progress. </h2>
+			<h2>Projects</h2>
 		</div>
 	</div>
 
 	<div class="container">
-		
-		<div class="content-container">
-			<section class="content content-reverse">
-				<div class="content-text">
-					<h3>Smith & Jones Architects</h3>
-					<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p> 
-					<button onclick="location.href='about.html'">Learn More</button>
+		<div class="projectspage-container">
+			<div class="carousel-container" id="carousel-container">
+				<div class="carousel-button carousel-button-prev"></div>
+				<div class="carousel-item carousel-current" id="carousel-item01">
+					<div class="carousel-item-text">
+						<h4>THE VILLAS</h4>
+						<p>The Villas bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
+			
+						<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+					</div>
 				</div>
-				<div class="content-image">
-					<img src="img/home/home-img-1.png" id="home01" alt="Home Image 1" class="animated">
+				<div class="carousel-item" id="carousel-item02">
+					<div class="carousel-item-text">
+						<h4>THE OUTSKIRTS</h4>
+						<p>The Outskirts are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p> 
+			
+						<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+					</div>
 				</div>
-			</section>
-	
-			<section class="content">
-				<div class="content-image">
-					<img src="img/home/home-img-2.png" id="home02" alt="Home Image 2">
+				<div class="carousel-item" id="carousel-item03">
+					<div class="carousel-item-text">
+						<h4>THE BLOCKS</h4>
+						<p>The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
+			
+						<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+					</div>
 				</div>
-				<div class="content-text">
-					<h3>Futuristic Designs</h3>
-					<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem </p>
-					<button onclick="location.href='projects.html'">View Designs</button>
-				</div>
-			</section>
+				<div class="carousel-item" id="carousel-item04">
+						<div class="carousel-item-text">
+							<h4>THE CONDOS</h4>
+							<p>The Condos are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
+				
+							<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+						</div>
+					</div>
+					<div class="carousel-item" id="carousel-item05">
+							<div class="carousel-item-text">
+								<h4>STRUCTURES</h4>
+								<p>The Structures are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
+					
+								<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+							</div>
+						</div>
+				<div class="carousel-button carousel-button-next"></div>
+			</div>
 		</div>
 
-		<div class="projects-container">
-			<h3>Recent Projects</h3>
-	
-			<section class="project">
+		<!-- <div class="projectspage-container">
+			<div class="carousel-button left-button">
+				<
+			</div>
+			<div class="carousel-button right-button">
+				>
+			</div>
+			<section class="project project-selected">
 				<div class="project-header">
 					<img src="img/home/home-villas-img.png" id="img-villas" alt="The Villas">
 					<h4>THE VILLAS</h4>
@@ -104,7 +128,7 @@
 					<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
 				</div>
 			</section>
-		</div>
+		</div> -->
 
 	</div>
 
@@ -151,5 +175,6 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
 	<script src="js/index.js"></script>
+	<script src="js/carousel.js"></script>
 </body>
 </html>

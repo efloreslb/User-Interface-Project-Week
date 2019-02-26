@@ -1,0 +1,84 @@
+/* Navigation Styling */
+
+.navigation {
+    background-color: @bluegray;
+    //opacity: .8;
+    padding: 13px 15px;
+    margin: 0 auto;
+    z-index: 2500;
+    position: fixed;
+    width: 100%;
+
+    @media @mobile {
+        //background-color: black;
+    }
+
+    .nav-contain {
+        max-width: 860px;
+        margin: 0 auto;
+       // padding: 0 15px 0 15px;;
+        .flex(space-between);
+
+        h1 {
+            font-size: 24px;
+            color: @white;
+            font-weight: 700;
+            z-index: 3000;
+            cursor: pointer;
+        }
+
+        .nav-content {
+            width: 100vw;
+            height: 100vh;
+            background-color: @bluegray;
+            z-index: 2500;
+            opacity: .95;
+            position: absolute;
+            top: 0;
+            left: 0;
+            .flex(center);
+            //transform: scale(0);
+
+            nav {
+                .flex(center);
+                flex-direction: column;
+                line-height: 90px;
+
+                //border: 1px solid greenyellow;
+
+                a {
+                    text-decoration: none;
+                    color: @white;
+                    font-size: 50px;
+                    font-weight: 700;
+
+                    &:hover {
+                        color: @brown;
+                    }
+                }
+                
+                .nav-item-selected {
+                    color: @brown;
+                }
+            }
+        }
+
+        .nav-hidden {
+            display: none;
+        }
+
+        .nav-button-hidden {
+            display: none;
+        }
+
+        img {
+            cursor: pointer;
+            z-index: 3000; 
+        }
+    }
+
+    // .expanded-nav {
+    //     max-width: 1024px;
+    //     height: cover;
+    // }
+}

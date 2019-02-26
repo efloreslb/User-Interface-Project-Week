@@ -1,61 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Contact Us</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/index.css">
-	<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-
-	<h1>Contact</h1>
-
-<!-- Contactd Us Content 
-  Contact Us
+    <header class="navigation">
+		<div class="nav-contain">
+			<h1 onclick="location.href='index.html'">S&J</h1>
+			<div class="nav-content nav-hidden">
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="services.html">Services</a>
+					<a href="contact.html" class="nav-item-selected">Contact</a>
+					<a href="about.html">About Us</a>
+					<a href="projects.html">Projects</a>
+				</nav>
+			</div>
+			<img src="img/nav-hamburger.png" class="nav-button">
+			<img src="img/nav-hamburger-close.png" class="nav-button nav-button-hidden">
+		</div>
+	</header>
+	
+	<div class="jumbotron jumbo-contact">
+		<div class="motto">
+			<h2>Contact Us</h2>
+		</div>
+	</div>
   
-Get In Touch
+<div class="container">
+	<div class="contact-container">
+		<div class="contact-form">
+			<form action="">
+				<h3>Get In Touch</h3>
+				<p>Email Address</p>
+				<input type="text" id="enter-email" placeholder="Enter Email" name="email">
+				<p class="footer-text">We'll never share your email with anyone else.</p>
+				<p>How many buildings do you need planned?</p>
+				<select name="buildings">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<p>Provide a brief overview of your project needs:</p>
+				<textarea name="overview"></textarea>
+				
+				<div class="radios">
+					<input type="radio" name="business">I am a small business<br>
+					<input type="radio" name="business">I am a residential owner<br>
+					<input type="radio" name="business">I am a corporation
+				</div>
+				<button>Submit</button>
+			</form>
+		</div>
+		<div class="contact-locations">
+			<h3>Where We Work</h3>
+			<div class="location">
+				<h4>New York</h4>
+				123 Lane<br>
+				Suite 100<br>
+				Albany, NY 12345<br>
+				202 555 0144
+			</div>
+			<div class="location">
+				<h4>Florida</h4>
+				Ocean Drive<br>
+				Suite 201<br>
+				Orlando, FL 22345<br>
+				502 555 0144
+			</div>
+			<div class="location">
+				<h4>California</h4>
+				Mountain Street<br>
+				Suite 105<br>
+				San Diego, CA 22345<br>
+				702 555 0144
+			</div>
+		</div>
+	</div>
+</div>
+	
 
-Email Address
-Enter Email
-We'll never share your email with anyone else.
 
-How many buildings do you need planned?
-1-5
+    <footer>
+        <div class="footer-content">
+            <div class="signup">
+                <h3>Interested in starting a project?  
+                Let’s talk:</h3>
+                <input type="text" placeholder="Enter email"></input>
+                <p>We'll never share your email with anyone else.</p>
+            </div>
+            <div class="sitelist">
+                <address class="site">
+                    <h4>New York</h4>
+                    123 Lane<br>
+                    Suite 100<br>
+                    Albany, NY 12345<br>
+                    <a href="tel:1-202-555-0144">202 555 0144</a>
+                </address>
+                <address class="site">
+                    <h4>Florida</h4>
+                    Ocean Drive<br>
+                    Suite 201<br>
+                    Orlando, FL 22345<br>
+                    <a href="tel:1-502-555-0144">502 555 0144</a>
+                </address>
+                <address class="site">
+                    <h4>California</h4>
+                    Mountain Street<br>
+                    Suite 105<br>
+                    San Diego, CA 22345<br>
+                    <a href="tel:1-702-555-0144">702 555 0144</a>
+                </address>
+            </div>
+        </div>
+        <div class="copyright">Copyright © 2018 Smith and Jones</div>
+	</footer>
 
-Provide a brief overview of your project needs:
-
-I am a small business
-I am a residential owner
-I am a corporation
-
-Submit
-
-Where We Work
-
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
-
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
-
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
-
--->
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
 	<script src="js/index.js"></script>
 </body>
 </html>
