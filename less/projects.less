@@ -12,8 +12,8 @@
     margin: 0 auto;
     max-width: 800px;
     width: 100%;
-    height: 550px;
-    background-color: @white;
+    height: 600px;
+    background-color: @lightgray;
     overflow: hidden;
     position: relative;
     //z-index: -1;
@@ -23,12 +23,14 @@
     }
 }
 
-.carousel-container .carousel-item {
+.carousel-item {
+    //margin: 0 auto;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0px;
     transition: all ease-in-out 200ms;
+    padding-bottom: 50px;
 
     padding-top: 280px;
     .flex(center);
@@ -36,26 +38,51 @@
     align-items: center;
     align-content: center;
 
+    display: none;
+
     h4 {
-        background-color: @lightgray;
+        background-color: @bluegray;
         width: 315px;
         text-align: center;
         font-size: 24px;
         letter-spacing: 8px;
         padding: 35px 0;
         border: 1px solid @white;
-        margin: -60px auto;
+        margin: -50px auto;
         margin-bottom: 30px;
+        color: @white;
     }
 
     .carousel-item-text {
         max-width: 500px;
         width: 100%;
 
+        @media @mobile {
+            max-width: 300px;
+            width: 100%;
+        }
+
         p {
             margin-bottom: 20px;
         }
     }
+}
+
+.carousel-current {
+    display: flex;
+    border: 1px solid @black;
+}
+
+.carousel-container #carousel-item05 {
+    background-image: url("../img/projects/projects05.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.carousel-container #carousel-item04 {
+    background-image: url("../img/projects/projects04.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 .carousel-container #carousel-item03 {
@@ -77,33 +104,36 @@
 }
 
 .carousel-button {
-    width: 25px;
-    height: 25px;
+    width: 80px;
+    height: 100%;
     background-color: @black;
     border-radius: 5px;
     position: absolute;
-    top: 110px;
     z-index: 2000;
-    opacity: .8;
+    opacity: .15;
     cursor: pointer;
 
     &:hover {
-        opacity: .9;
+        opacity: .5;
+    }
+
+    @media @mobile {
+        width: 25px;
     }
 }
 
-.carousel-button-previous {
-    left: 5px;
+.carousel-button-prev {
+    left: 0px;
     background-image: url("../img/projects/button-left.png");
-    background-size: 90%;
+    //background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .carousel-button-next {
-    right: 5px;
+    right: 0px;
     background-image: url("../img/projects/button-right.png");
-    background-size: 90%;
+    //background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
 }
